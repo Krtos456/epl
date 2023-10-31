@@ -15,6 +15,8 @@ use App\Http\Controllers\HomeController;
 */
 Route::get ('students', [HomeController::class, 'students']);
 Route::get('/',[HomeController::class, 'home']);
+Route::get ('modules', [HomeController::class, 'modules']);//impliment function
+//Route::get('modules'{programe},[HomeController::class,modulesprogrames]);
 
 //Route::get('/','App\Http\Controllers\HomeController@Home');
 

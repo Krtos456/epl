@@ -12,14 +12,13 @@ class HomeController extends Controller
         return view('home');
     }
 
-    
-    
     public function students(){
-        $students= student::select(8);
-        return view('students')->with('students',$students);
-    }  
+       
+       $data=Student::select('*')->get();
+        return view('students')->with('students',$data);
+    } 
+
      public function getData(){
     return Student::select('*')->get();
      }
-
 }
