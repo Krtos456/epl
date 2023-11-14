@@ -9,11 +9,12 @@
 <body>
     <div class="container">
         <div class="leftcontainer">
-            <img src="{{$data->ProfilePic}}" alt="Profile pic">
+            <!-- note source ge root akee public -->
+            <img src="/images/{{$data[0]->ProfilePic}}" alt="Profile pic also {{$data[0]->ProfilePic}}">
         </div>
         <div class="rightcontainer">
-            <div>{{$data->Id}}  </div>
-            <div>{{$data->FirstName}} {{$data->LastName}}</div>
+            <div>{{$data[0]->Id}}  </div>
+            <div>{{$data[0]->FirstName}} {{$data[0]->LastName}}</div>
         </div>
     </div>
 </body>

@@ -37,14 +37,16 @@ public function modules(){
 public function SpecificModules($moduleName){
     $data =Module::where('programe',$moduleName)->get();
     $menus=Menu::select('*')->get();
-    return $data; 
+
     return view('modules')
     ->with('modules',$data)->with('menus',$menus);
 }
 
-public function studentDetails(Request $RequestedID){
-    $data=Student::find($RequestedID->Id);
-    return view('studentprofile',compact('data'));
+public function studentDetails($studentID){
+    
+    $data=Student::where('idstudents',$studentID)->get();
+   $menus=Menu::select('*')->get();
+    return view('studentprofile',compact('data'))->with('menus',$menus);
 }
 
      public function getData(){
