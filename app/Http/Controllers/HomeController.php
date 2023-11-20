@@ -45,7 +45,8 @@ public function SpecificModules($moduleName){
 public function studentDetails($studentID){
     
     $data=Student::where('idstudents',$studentID)->get();
-   $menus=Menu::select('*')->get();
+   $menus=Menu::select('*')->get();     
+   
     return view('studentprofile',compact('data'))->with('menus',$menus);
 }
 
