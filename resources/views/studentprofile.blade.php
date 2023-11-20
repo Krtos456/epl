@@ -10,11 +10,11 @@
     <div class="container">
         <div class="leftcontainer">
             <!-- note source ge root akee public -->
-            <img src="/images/{{$data[0]->ProfilePic}}" alt="Profile pic also {{$data[0]->ProfilePic}}">
+            <img src="/images/{{ $studentdata[0]->ProfilePic}}" alt="Profile pic also {{ $studentdata[0]->ProfilePic}}">
         </div>
         <div class="rightcontainer">
-            <div>{{$data[0]->Id}}  </div>
-            <div>{{$data[0]->FirstName}} {{$data[0]->LastName}}</div>
+            <div>{{ $studentdata[0]->Id}}  </div>
+            <div>{{ $studentdata[0]->FirstName}} {{ $studentdata[0]->LastName}}</div>
         </div>
     </div>
 </body>

@@ -12,7 +12,7 @@
             
             @foreach($students as $student)
             <tr>
-                <td class ><a href="show/{{$student->idstudents}}">{{$student->idstudents}}</a></td> 
+                <td class ><a href="/studentprofile/{{$student->idstudents}}">{{$student->idstudents}}</a></td> 
                 <td>{{$student->FirstName}}</td>
                 <td>{{$student->LastName}}</td>
             </tr>

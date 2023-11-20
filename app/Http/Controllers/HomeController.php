@@ -44,10 +44,10 @@ public function SpecificModules($moduleName){
 
 public function studentDetails($studentID){
     
-    $data=Student::where('idstudents',$studentID)->get();
+    $studentdata=Student::where('idstudents',$studentID)->get();
    $menus=Menu::select('*')->get();     
    
-    return view('studentprofile',compact('data'))->with('menus',$menus);
+    return view('studentprofile',compact('studentdata'))->with('menus',$menus);
 }
 
      public function getData(){

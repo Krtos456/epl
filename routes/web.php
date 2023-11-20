@@ -17,7 +17,7 @@ Route::get ('students', [HomeController::class, 'students']);
 Route::get('/',[HomeController::class, 'home']);
 Route::get('modules/{programe}',[HomeController::class,'SpecificModules']);
 Route::get ('modules', [HomeController::class, 'modules']);//impliment function
-Route::get ('/show/{id}',[HomeController::class,'studentDetails']);
+Route::get ('/studentprofile/{id}',[HomeController::class,'studentDetails']);
 
 //Route::get('modules'{programe},[HomeController::class,modulesprogrames]);
 
